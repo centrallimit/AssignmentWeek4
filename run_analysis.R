@@ -118,7 +118,6 @@ group_by(nsubject, nactivity) %>%
 summarise_each(funs(mean))
 
 # Write data set with means to a txt file 
-# write.csv(Mean_DF, file = "MEAN_DATA.csv")
 write.table(Mean_DF, row.names = FALSE, file = "Tidy_Data.txt")
 
         
