@@ -73,12 +73,47 @@ Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012
 
 # Tidy Data Set - Output
 ## Variables 
+* nsubject: Number of volunteer
+* nactivity: Activity
+* Variables 3-88 are the averages of measurements grouped by activity and subject
+        + All variable names are derived from the names provided in the file "features_info.txt".
+        + The are converted to lower case characters
+        + The characters: ,-() are removed
+         
+        
+tBodyAcc-XYZ
+tGravityAcc-XYZ
+tBodyAccJerk-XYZ
+tBodyGyro-XYZ
+tBodyGyroJerk-XYZ
+tBodyAccMag
+tGravityAccMag
+tBodyAccJerkMag
+tBodyGyroMag
+tBodyGyroJerkMag
+fBodyAcc-XYZ
+fBodyAccJerk-XYZ
+fBodyGyro-XYZ
+fBodyAccMag
+fBodyAccJerkMag
+fBodyGyroMag
+fBodyGyroJerkMag
+gravityMean
+tBodyAccMean
+tBodyAccJerkMean
+tBodyGyroMean
+tBodyGyroJerkMean
+
+
+
+
 
 
 No	|	Variable name           	        |	Unit	|	Range
 -------------------------------------------------------------------------------------------------------------------------------
 1	|	nsubject                	        |	integer	|	1-30
-2	|	nactivity	                        |	string	|	WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS,            |                                               |               |       SITTING, STANDING, LAYING
+2	|	nactivity	                        |	string	|	WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, 
+        |                                               |               |       SITTING, STANDING, LAYING
 3	|	tbodyaccmeanx           	        |	double	|	[-1,+1]
 4	|	tbodyaccmeany                      	|	double	|	[-1,+1]
 5	|	tbodyaccmeanz           	        |	double	|	[-1,+1]

@@ -10,20 +10,20 @@ The R script is divided in five parts
 * All relevant data is loaded into memory
 * Variables will be named according to their feature names
 
-# Step 2:
+# Step 2: Merge Data
 * Combining the different data sources to a unique data set
 * Selection of variables with the "mean" or "std" in their name for further
 * Merge the data to the tidy_data set
 
-# Step 3:
+# Step 3: Labeling Activity Data
 * Use descriptive activity names to name the activities in the data set
 * Uses the factor function in R 
 
-# Step 4:
+# Step 4: Changing Variable Names
 * Appropiately labels the data set with descriptive variable names
 * Uses regular expressions and the tolower function to clean variable names
 
-# Step 5:
+# Step 5: Grouping Data and Computation of Average
 * Creates a new data frame from the tidy data
 * Groups the data set by subject and activity
 * Computes the mean of average for each activity and each subject
