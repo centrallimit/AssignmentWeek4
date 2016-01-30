@@ -110,11 +110,11 @@ setwd("~/Documents/GET_CLEAN_TIDY/GET_CLEAN_TIDY/")
 ## tidy data set with the average of each variable for each activity
 ## and each subject
 
-# Computation of each subject and eac
+# 
 Mean_DF <- Tidy_Data %>%
 # Group data set by subject and activity        
 group_by(nsubject, nactivity) %>%
-# Compute the mean for every variable        
+# Compute the average for every variable        
 summarise_each(funs(mean))
 
 # Write data set with means to a txt file 

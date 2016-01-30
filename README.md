@@ -9,11 +9,25 @@ The R script is divided in five parts
 # Step 1: Data preparation
 * All relevant data is loaded into memory
 * Variables will be named according to their feature names
-* Combining the different data sources to a unique data set
+
 # Step 2:
+* Combining the different data sources to a unique data set
 * Selection of variables with the "mean" or "std" in their name for further
 * Merge the data to the tidy_data set
-# 
+
+# Step 3:
+* Use descriptive activity names to name the activities in the data set
+* Uses the factor function in R 
+
+# Step 4:
+* Appropiately labels the data set with descriptive variable names
+* Uses regular expressions and the tolower function to clean variable names
+
+# Step 5:
+* Creates a new data frame from the tidy data
+* Groups the data set by subject and activity
+* Computes the mean of average for each activity and each subject
+
 
 
 
@@ -46,12 +60,12 @@ Tidy_Data <- tbl_df(rbind(Test_DF,  Training_DF))
 rm(Test_DF)
 rm(Training_DF)
 
-### Step 3: Use descriptive activity names to name the activities in the data set
+### Step 3: 
 ### 
 Tidy_Data$NActivity <- factor(Tidy_Data$NActivity, 
                               levels = LabelActivities[, 1], 
                               labels = LabelActivities[, 2])
-### Step 4: Appropiately labels the data set with descriptive variable names
+### Step 4: 
 ###   
 
 names(Tidy_Data) <- gsub(pattern = "-+|,+|\\(|\\)"
