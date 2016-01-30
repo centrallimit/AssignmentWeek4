@@ -8,7 +8,7 @@
 library(dplyr)
 library(tidyr)
 
-##### STEP 1: Merging Data
+##### STEP 1: Data preparation
 #####
 
 # Setting the working directory 
